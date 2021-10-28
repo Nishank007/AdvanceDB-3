@@ -1,0 +1,117 @@
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Nishank Gujar Quiz 3</title>
+</head>
+<h1 style="text-align: center;">Student ID : 1001861756</h1>
+<h1 style="text-align: center;">Name : Nishank Gujar</h1>
+
+<h1>1) Display details based on Magnitude ranges</h1>
+<form action="/prob1a" method="post">
+	<label>Higher range: Magnitude:</label>
+	<input type="number" step="0.01" name="start_mag"><br>
+	<label>Lower Range: Magnitude: </label>
+	<input type="number" step="0.01" name="end_mag">
+	<br>
+	<input type="submit" name="prob_1a_submit">
+</form>
+<br>
+
+<h1>2) Display details based on magnitude ranges and query instances</h1>
+<form action="/prob2a" method="post">
+	<label>Number of times to process a query: (1 - 1000): </label>
+	<input type="number" name="query_count1" min="1" max="1000">
+	<br>
+	<label>Higher range: Magnitude:</label>
+	<input type="number" step="0.01" name="start_mag1"><br>
+	<label>Lower Range: Magnitude: </label>
+	<input type="number" step="0.01" name="end_mag1">
+	<br>
+	<input type="submit" name="prob_2a_submit">
+</form>
+<br>
+
+<h1>10) Display details based on magnitude ranges and query instances using in memory caching mechanism</h1>
+<form action="/prob10" method="post">
+	<label>Number of times to process a query: (1 - 1000): </label>
+	<input type="number" name="query_count1" min="1" max="1000">
+	<br>
+	<label>Higher range: magnitude:</label>
+	<input type="number" step="0.01" name="start_mag1"><br>
+	<label>Lower Range: magnitude: </label>
+	<input type="number" step="0.01" name="end_mag1">
+	<br>
+	<input type="submit" name="prob_10_submit">
+</form>
+<br>
+
+<h1>11) Display details based on Magnitude and latitude longitude ranges</h1>
+<form action="/prob1a" method="post">
+	<label>Higher range: Magnitude:</label>
+	<input type="number" step="0.01" name="start_mag"><br>
+	<label>Lower Range: Magnitude: </label>
+	<input type="number" step="0.01" name="end_mag">
+	<br>
+	<label>Higher range: Latitude:</label>
+	<input type="number" step="0.01" name="start_lat"><br>
+	<label>Lower Range: Latitude: </label>
+	<input type="number" step="0.01" name="end_lat">
+	<br>
+	<label>Higher range: Longitude:</label>
+	<input type="number" step="0.01" name="start_long"><br>
+	<label>Lower Range: Longitude: </label>
+	<input type="number" step="0.01" name="end_long">
+	<br>
+	<input type="submit" name="prob_1a_submit">
+</form>
+<br>
+
+<h1>4) Display details based on latitude ranges and query instances using in memory caching mechanism or none</h1>
+<form action="/prob4a" method="post">
+	<label>Number of times to process a query: (1 - 1000): </label>
+	<input type="number" name="query_count3" min="1" max="1000">
+	<br>
+	<label>Higher range: Latitude:</label>
+	<input type="number" step="0.01" name="start_latitude3"><br>
+	<label>Lower Range: Latitude: </label>
+	<input type="number" step="0.01" name="end_latitude3">
+	<br>
+	<input type="radio" name="use_cache" value="True"><label>Cache</label><br>
+	<input type="radio" name="use_cache" value="False" checked><label>No Cache</label><br>
+	<input type="submit" name="prob_4a_submit">
+</form>
+<br>
+
+<h1>2)</h1>
+<form action="prob1" method="post">
+	<label>Number of times to process a query: (1 - 1000): </label>
+	<input type="number" name="query_count" min="1" max="1000">
+	<br>
+	<input type="radio" name="use_cache" value="True"><label>Using Cache</label><br>
+	<input type="radio" name="use_cache" value="False" checked><label>Without Cache</label><br>
+	<input type="submit" name="queries_generate_submit">
+</form>
+
+<h1>2)</h1>
+<form action="prob2" method="post">
+	<label>Magnitude Range: </label>
+	<input type="number" name="start_magnitude" min="0">
+	<label> to </label>
+	<input type="number" name="end_magnitude" max="10">
+	<br>
+	<label>Number of times to process a query: (1 - 1000): </label>
+	<input type="number" name="query_count" min="1" max="1000">
+	<br>
+	<input type="radio" name="use_cache" value="True"><label>Using Cache</label><br>
+	<input type="radio" name="use_cache" value="False" checked><label>Without Cache</label><br>
+	<input type="submit" name="queries_generate_submit">
+</form>
